@@ -1,0 +1,169 @@
+.formContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    background-color: #000000;
+    padding: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.leftItem {
+    width: 40%;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.rightItem {
+    width: 100%;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+
+.boxShadow {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 2%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.boxShadow:hover {
+    /* transform: scale(1.02); */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+
+}
+
+.btnDiv {
+    padding: 10px 0;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap: 10px;
+}
+
+div .card .leftItem img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* background: #dfdfdf; */
+}
+
+form .card .leftItem input {
+    border-radius: 50%;
+    padding: 80px;
+    color: white;
+}
+
+
+.react_button button {
+    background-color: white;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 31px;
+    height: 55px;
+    width: 55px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 70%;
+}
+
+.react_button button:active {
+    background-color: #fcfcfc;
+    box-shadow: 0 0 2px rgb(10, 16, 16);
+    transform: translateY(2px);
+}
+
+.react_button button:not(:first-child) {
+    margin-top: 10px;
+}
+
+
+form .card .title {
+    width: 50%;
+}
+
+form .card .commenet {
+    width: 50%;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: space-evenly;
+    /* gap: 30px; */
+    margin: 10px 0;
+}
+
+textarea {
+    width: 80%;
+    height: 15ch;
+    padding: 5px;
+    margin-bottom: 15px solid rgb(230, 227, 227);
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #007bff;
+}
+
+.file-input {
+    display: none;
+}
+
+.file-input-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.file-input-wrapper::after {
+    content: 'No file chosen';
+    display: inline-block;
+    margin-left: 10px;
+    color: #555;
+}
+
+.file-input-wrapper .file-selected::after {
+    content: attr(data-text);
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .formContainer {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 480px) {
+    .formContainer {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .leftItem {
+        width: 100%;
+    }
+
+    .rightItem {
+        width: 100%;
+    }
+
+    .leftItem img {
+        height: 100px;
+        width: 100px;
+    }
+}

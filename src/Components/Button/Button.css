@@ -1,0 +1,22 @@
+.btn {
+    background-color: #4096FF;
+    color: #FFFFFF;
+    font-weight: 600;
+    padding: 5px 15px;
+    border: 0;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8%;
+    text-align: center;
+    text-decoration: none;
+    font-family: serif;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #007bff;
+}
+
+.btn.clicked {
+    opacity: 0.5;
+}

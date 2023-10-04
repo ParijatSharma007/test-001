@@ -1,0 +1,42 @@
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 15px solid rgb(230, 227, 227);
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+
+/* input {
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 15px solid green;
+    border: 1px solid #00ff62;
+    color: #000;
+    font-size: small;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+} */
+
+input::placeholder {
+    color: #ccc;
+    padding: 2px;
+    font-size: small;
+    font-family: cursive;
+}
+
+input:focus {
+    border-color: #007bff;
+    /* box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); */
+}
